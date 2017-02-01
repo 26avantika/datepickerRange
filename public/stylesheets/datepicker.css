@@ -1,0 +1,126 @@
+.month {
+  float:left;
+  border-width:1px;
+  border-color:#5d7ab6;
+  border-style:solid;
+  border-radius: 4px;
+  margin:1px;
+  width:90px;
+  padding-left:2px;
+  color:#1b2436;
+}
+
+.year {
+  float:left;
+  border-width:1px;
+  border-color:#5d7ab6;
+  border-style:solid;
+  border-radius: 4px;
+  margin:1px;
+  width:90px;
+  padding-left:2px;
+  color: #1b2436;
+}
+
+.daysOfWeek {
+  float:left;
+  width:25px;
+  height:25px;
+  border-style:none;
+  color:#5d7ab6;
+  text-align:center;
+  margin:1px;
+  text-decoration:none;
+  padding-top:3px;
+}
+
+
+.datelive {
+  float:left;
+  width:25px;
+  height:25px;
+  border-style:none;
+  border-radius: 5px;
+  text-align:center;
+  color: #1b2436;
+  margin:1px;
+  text-decoration:none;
+  padding-top:3px;
+  background-color: #eef1f7;
+}
+
+.datelive:hover {
+  background-color: #5d7ab6;
+  color: white;
+  text-decoration:none;
+}
+
+.dateunlive {
+  float:left;
+  width:25px;
+  height:25px;
+  border-style:none;
+  margin: 1px;
+}
+
+.picker {
+  float:left;
+  width:200px;
+  border-width:1px;
+  border-color:#5d7ab6;
+  border-style:solid;
+  padding-left:4px;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+
+.selected {
+  color: #1b2436;
+  background-color: #c7d8f9;
+}
+
+#calendarIcon:hover
+{
+  cursor: pointer;
+}
+
+.datedisabled, .datedisabled:hover{
+  pointer-events: none;
+  cursor: default;
+  color: #bec9e1; 
+  background-color: #eef1f7;
+}
+
+/* animation */
+.animateDate 
+{
+  -webkit-animation: animateCalendar .6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: animateCalendar .6s; /* Firefox < 16 */
+  -ms-animation: animateCalendar .6s; /* Internet Explorer */
+  -o-animation: animateCalendar .6s; /* Opera < 12.1 */
+  animation: animateCalendar .6s;
+}
+
+@keyframes animateCalendar
+{
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes animateCalendar {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
