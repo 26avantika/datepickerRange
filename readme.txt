@@ -29,3 +29,8 @@
     from:  start date(dd/mm/yyyy)
 
     to: end date(dd/mm/yyyy)
+4) install the node packages
+      npm install
+
+5) npm start
+      view the result in localhost:3000
